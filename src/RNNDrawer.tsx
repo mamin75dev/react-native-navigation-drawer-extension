@@ -213,7 +213,7 @@ class RNNDrawer {
           ) => {
             const { moveX, moveY } = _gestureState;
 
-            dispatch('SWIPE_START', {moveX, moveY});
+//             dispatch('SWIPE_START', {moveX, moveY});
           },
           onPanResponderRelease: (
             _evt: GestureResponderEvent,
@@ -222,7 +222,7 @@ class RNNDrawer {
             const { vx } = gestureState;
 
             // Emit this event when the gesture ends
-            dispatch('SWIPE_END', vx > 0 ? 'right' : 'left');
+//             dispatch('SWIPE_END', vx > 0 ? 'right' : 'left');
           },
           onPanResponderTerminationRequest: (
             _evt: GestureResponderEvent,
@@ -239,7 +239,7 @@ class RNNDrawer {
             const { moveX, moveY } = _gestureState;
             const direction = this.props.direction || 'left';
 
-            dispatch('SWIPE_MOVE', { value: { moveX, moveY }, direction });
+//             dispatch('SWIPE_MOVE', { value: { moveX, moveY }, direction });
           },
         });
 
